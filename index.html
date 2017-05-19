@@ -75,6 +75,10 @@ window.onload = function() {
   const ui = SwaggerUIBundle({
     url: "https://sketchpacks-api.herokuapp.com/api-docs/v1/swagger.json",
     dom_id: '#swagger-ui',
+    presets: [		
+       SwaggerUIBundle.presets.apis,		
+      SwaggerUIStandalonePreset		
+    ],
     plugins: [
       SwaggerUIBundle.plugins.DownloadUrl
     ],
